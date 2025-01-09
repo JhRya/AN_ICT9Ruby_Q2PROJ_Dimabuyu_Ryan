@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-image: url(backgroundchinese.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: black;
+        }
+        .navbar{
+            font-family: Roboto, sans-serif;
+            padding: 7px;
+            font-size: 16px;
+        }
+        .header{
+            text-align: center;
+            margin-top: 40px;
+            font-family: Trend Sans One, sans-serif;
+            font-size: 20px;
+        }
+        .header h1{
+            font-size: 50px;
+        }
+        .carousel{
+            height: 650px;
+            width: 1250px;
+            max-width: 1250px;
+        }
+        .carousel-inner img{
+            width: 100%; 
+            height: 625px; 
+            object-fit: cover;
+            border-radius: 10px; 
+            border: 4px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-caption{
+            color: whitesmoke;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+        .carousel-container{
+            display: flex;
+            justify-content: center;   
+            align-items: center;      
+            padding: 10px;             
+        }
+        footer{
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            margin-bottom: 0px;
+        }
+        .footer-links a{
+            color: black;
+            text-decoration: none;
+        }
+        .footer-links a:hover{
+            text-decoration: underline;
+        }
+        .footer-logo p{
+            font-size: 30px;
+            font-family: Trebuchet MS, sans-serif;
+            letter-spacing: 3px;
+            display: inline;
+            padding-left: 10px;
+        }
+        .footer-logo{
+            border-bottom: solid 2px black;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="logo.png" alt="Logo" width="30" height="30" class="me-2"><b>
+                PANDA EXPRESS</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="padding:2px">
+                <ul class="navbar-nav mx-auto" style="padding-left: 50px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Categories.html" style="color: white;">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"style="color: white;">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container container2">
+        <div class="header">
+        <h1 style="color: black;letter-spacing: 5px;"><b>PANDA EXPRESS</b></h1>
+        <p style="color: #FF3131; font-family: Trebuchet MS, sans-serif;">"Where Chinese flavors and American tastes meet"</p>
+        </div>
+        <div class="carousel-container">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image1.jpg" class="d-block w-100" alt="Orange Chicken">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Orange Chicken</h5>
+                        <p>Crispy chicken in a sweet and tangy orange glaze—a Panda Express favorite.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image3.jpg" class="d-block w-100" alt="Fried Rice">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fried Rice</h5>
+                        <p>Fluffy rice with fresh veggies, scrambled eggs, and soy sauce—a classic side or entrée.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image2.webp" class="d-block w-100" alt="Food">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Panda Express Classics Combo</h5>
+                        <p>A tasty selection of Panda Express favorites, including fried chicken, beef with broccoli, stir-fried vegetables, and honey walnut shrimp, served with chopsticks and fortune cookies.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image4.webp" class="d-block w-100" alt="Beef">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Beijing Beef</h5>
+                        <p>Crispy beef, bell peppers, and onions in a bold, tangy-sweet sauce.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> 
+        </div>
+    </div>
+        <footer class="footer text-black py-4">
+            <div class="container text-center">
+                <div class="footer-logo mb-3">
+                    <img src="logo.png" alt="PANDA EXPRESS Logo" width="80"><p><b>PANDA EXPRESS</b></p>
+                </div>
+                <div class="footer-links mb-2">
+                    <p>
+                    <a href="termofuse.html" style="margin-right: 10px;">Terms of Use</a>
+                    <a href="Form.html" style="margin-right: 10px;"> Submit Your Recipe</a>
+                    <a href="privacypolicy.html"> Privacy Policy</a>
+                    </p>
+                </div>
+                <p>© 2025 PANDA EXPRESS. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
